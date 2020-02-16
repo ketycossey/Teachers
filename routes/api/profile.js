@@ -61,6 +61,8 @@ router.post(
     }
   }
 );
+
+//this gets all profiles
 router.get("/", async (req, res) => {
   try {
     const profiles = await Profile.find().populate("user", ["name", "avatar"]);
