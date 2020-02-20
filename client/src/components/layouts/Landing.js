@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Landing = () => {
   return (
-    <section class="landing">
+    <section className="landing">
       <div className="dark-overlay">
         <div className="landing-inner">
           <h1 className="x-large">InHouse PD</h1>
@@ -10,12 +11,12 @@ export const Landing = () => {
             Create a culture of employees helping each other.
           </p>
           <div className="buttons">
-            <a href="register.html" class="btn btn-primary">
+            <Link to="/register" className="btn btn-primary">
               Sign Up
-            </a>
-            <a href="login.html" class="btn btn-light">
+            </Link>
+            <Link to="/login" className="btn btn-light">
               Login
-            </a>
+            </Link>
           </div>
         </div>
       </div>
